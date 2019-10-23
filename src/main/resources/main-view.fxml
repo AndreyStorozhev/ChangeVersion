@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="substitute.view.ViewController">
+   <children>
+      <AnchorPane fx:id="scene" layoutX="-4.0" layoutY="100.0" prefHeight="500.0" prefWidth="606.0" style="-fx-background-color: #fafafa;">
+         <children>
+            <Label layoutX="39.0" layoutY="14.0" prefHeight="20.0" prefWidth="238.0" text="Имя артефакта (jackson-mapper-asl)">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="413.0" layoutY="16.0" prefHeight="17.0" prefWidth="160.0" text="Версия артефакта (9.3.0.19)" />
+            <TextField fx:id="dependenceNameField0" layoutX="14.0" layoutY="46.0" prefHeight="25.0" prefWidth="295.0" />
+            <TextField fx:id="dependenceVersionField0" layoutX="403.0" layoutY="46.0" prefHeight="25.0" prefWidth="181.0" />
+            <Button fx:id="refreshDependencies" layoutX="277.0" layoutY="412.0" mnemonicParsing="false" text="Обновить" />
+            <TextField fx:id="dependenceNameField1" layoutX="14.0" layoutY="91.0" prefHeight="25.0" prefWidth="295.0" visible="false" />
+            <TextField fx:id="dependenceNameField2" layoutX="14.0" layoutY="136.0" prefHeight="25.0" prefWidth="295.0" visible="false" />
+            <TextField fx:id="dependenceNameField3" layoutX="14.0" layoutY="186.0" prefHeight="25.0" prefWidth="295.0" visible="false" />
+            <TextField fx:id="dependenceVersionField1" layoutX="403.0" layoutY="91.0" prefHeight="25.0" prefWidth="181.0" visible="false" />
+            <TextField fx:id="dependenceVersionField2" layoutX="403.0" layoutY="136.0" prefHeight="25.0" prefWidth="181.0" visible="false" />
+            <TextField fx:id="dependenceVersionField3" layoutX="403.0" layoutY="186.0" prefHeight="25.0" prefWidth="181.0" visible="false" />
+            <TextField fx:id="dependenceNameField4" layoutX="14.0" layoutY="231.0" prefHeight="25.0" prefWidth="295.0" visible="false" />
+            <TextField fx:id="dependenceNameField5" layoutX="14.0" layoutY="273.0" prefHeight="25.0" prefWidth="295.0" visible="false" />
+            <TextField fx:id="dependenceNameField6" layoutX="14.0" layoutY="315.0" prefHeight="25.0" prefWidth="295.0" visible="false" />
+            <TextField fx:id="dependenceVersionField4" layoutX="403.0" layoutY="231.0" prefHeight="25.0" prefWidth="181.0" visible="false" />
+            <TextField fx:id="dependenceVersionField5" layoutX="403.0" layoutY="273.0" prefHeight="25.0" prefWidth="181.0" visible="false" />
+            <TextField fx:id="dependenceVersionField6" layoutX="403.0" layoutY="315.0" prefHeight="25.0" prefWidth="181.0" visible="false" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="7.0" layoutY="6.0" prefHeight="39.0" prefWidth="373.0" text="Обновление зависимостей" textFill="#dd0404">
+         <font>
+            <Font name="Cambria" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="appendButton" layoutX="477.0" layoutY="59.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Добавить поля" />
+      <Label layoutX="7.0" layoutY="33.0" prefHeight="25.0" prefWidth="433.0" text="Зависимости необходимо вводить как показанно в примере без скобок" textFill="#e40404">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="50.0" prefHeight="19.0" prefWidth="466.0" text="Особенно надо быть аккуратным к полю версии т.к. оно подставляется в pom" textFill="#ee0e0e">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
